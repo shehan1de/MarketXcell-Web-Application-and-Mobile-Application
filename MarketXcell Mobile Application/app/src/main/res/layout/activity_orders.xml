@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrdersActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/texttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/inter"
+                android:textAlignment="center"
+                android:text="Check your order details "
+                android:textColor="@color/Black100"
+                android:textFontWeight="600"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter"
+                android:text="See your previous  orders"
+                android:textColor="@color/Black75"
+                android:textFontWeight="400"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/orderpage_completeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button3"
+                android:fontFamily="@font/inter"
+                android:padding="16px"
+                android:text="Completed Orders"
+                android:layout_marginRight="8dp"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textFontWeight="700"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/orderpage_OngingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button1"
+                android:fontFamily="@font/inter"
+                android:padding="16px"
+                android:text="Ongoing Orders"
+                android:layout_marginLeft="8dp"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textFontWeight="700"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="418dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/orderpage_loadingGif"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/loading"
+                />
+
+            <TextView
+                android:id="@+id/cartPage_message"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/inter"
+                android:text="Error message"
+                android:textColor="@color/Black100"
+                android:textFontWeight="700"
+                android:textSize="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/orderpage_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="397dp"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <include layout="@layout/menu_component" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/Checkout_page_backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/inter"
+                android:text="Back"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/Black100"
+                android:textFontWeight="700"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/inter"
+            android:text="Checkout"
+            android:textAlignment="center"
+            android:textColor="@color/Black100"
+            android:textFontWeight="600"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Only one step left to ket your order"
+            android:textAlignment="center"
+            android:textColor="@color/Black75"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textVieddw4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter"
+            android:text="Client Name"
+            android:textColor="@color/Black75"
+            android:textFontWeight="700"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/CheckoutPage_clientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/textfield_background"
+            android:fontFamily="@font/inter"
+            android:hint="Enter Client Name"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/Black100"
+            android:textFontWeight="400"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textViewsa4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter"
+            android:text="Client Address"
+            android:textColor="@color/Black75"
+            android:textFontWeight="700"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/CheckoutPage_clientAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/textfield_background"
+            android:fontFamily="@font/inter"
+            android:hint="Enter Client Address"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/Black100"
+            android:textFontWeight="400"
+            android:textSize="14dp" />
+
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter"
+            android:text="Payment method"
+            android:textColor="@color/Black75"
+            android:textFontWeight="700"
+            android:textSize="14dp" />
+
+        <Spinner
+            android:id="@+id/checkoutPage_paymentOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner"
+            android:fontFamily="@font/inter"
+            android:padding="16dp"
+            android:pointerIcon="arrow"
+            android:layout_marginBottom="32dp"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/Black75" />
+
+
+        <Button
+            android:id="@+id/checkoutPage_placeOrder"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button1"
+            android:fontFamily="@font/inter"
+            android:padding="16px"
+            android:text="Place Order"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textFontWeight="700"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

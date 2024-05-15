@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Black100">#18191B</color>
+    <color name="Black75">#525354</color>
+    <color name="PrimaryColor">#1985F1</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Black25">#C5C6C6</color>
+    <color name="Black10">#E8E8E8</color>
+    <color name="SecondaryColor">#F27F18</color>
+    <color name="Black50">#8C8C8D</color>
+    <color name="Black3">#F8F8F8</color>
+    <color name="ProductCard">#FFD8B4</color>
+    <color name="red">#FF4848</color>
+
+
+</resources>

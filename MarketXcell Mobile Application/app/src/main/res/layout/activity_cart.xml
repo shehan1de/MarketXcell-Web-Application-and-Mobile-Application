@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/texttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/inter"
+                android:text="Cart"
+                android:textColor="@color/Black100"
+                android:textFontWeight="600"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter"
+                android:text="Only One Step Left To Plance Order"
+                android:textColor="@color/Black75"
+                android:textFontWeight="400"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:id="@+id/cartPage_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/cartRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_marginBottom="8dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/inter"
+                                android:text="Total Amount:"
+                                android:textColor="@color/Black100"
+                                android:textFontWeight="700"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/cartPage_amout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dp"
+                                android:fontFamily="@font/inter"
+                                android:text="Loading.."
+                                android:textColor="@color/Black100"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/cartPage_amoutaftercode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter"
+                                android:textColor="@color/Black100"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dp"
+                                android:fontFamily="@font/inter"
+                                android:text="Total Commission:"
+                                android:textColor="@color/Black100"
+                                android:textFontWeight="700"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/cartPage_totalCommission"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter"
+                                android:text="Loading.."
+                                android:textColor="@color/Black100"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="100"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/cartPage_txt_coupencodefield"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/textfield_background"
+                            android:fontFamily="@font/inter"
+                            android:hint="Enter Coupon Code"
+                            android:inputType="text"
+                            android:padding="16dp"
+                            android:textFontWeight="400"
+                            android:textSize="14dp" />
+
+                        <Button
+                            android:id="@+id/cartPage_couponapplyBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/custom_button3"
+                            android:fontFamily="@font/inter"
+                            android:padding="16px"
+                            android:text="Apply"
+                            android:textAllCaps="false"
+                            android:textColor="@color/White"
+                            android:textFontWeight="700"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/cartPage_checkout_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/custom_button1"
+                        android:fontFamily="@font/inter"
+                        android:padding="16px"
+                        android:text="Checkout"
+                        android:textAllCaps="false"
+                        android:textColor="@color/White"
+                        android:textFontWeight="700"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/cartPage_message"
+            android:layout_width="match_parent"
+            android:layout_height="528dp"
+            android:layout_marginLeft="17dp"
+            android:gravity="bottom"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViesw12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter"
+                android:text="No Products In The Cart"
+                android:textColor="@color/Black100"
+                android:textFontWeight="700"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <include layout="@layout/menu_component" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

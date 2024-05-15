@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "848226701504",
+    "project_id": "marketxcell-a2edb",
+    "storage_bucket": "marketxcell-a2edb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848226701504:android:6669e7f6e59b78c5191d25",
+        "android_client_info": {
+          "package_name": "com.example.marketxcell"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2i9Di9L8KLgWaoO_B_QDS4t824uxCPkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
